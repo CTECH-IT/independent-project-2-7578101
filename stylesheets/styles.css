@@ -1,1 +1,151 @@
 /* Put your CSS here */
+@font-face {
+    font-family: 'airstreamregular';
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/Airstream-webfont.eot");
+    src: url('fonts/Airstream-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/Airstream-webfont.woff') format('woff'), url('fonts/Airstream-webfont.ttf') format('truetype'), url('fonts/Airstream-webfont.svg#lakeshore') format('svg');
+}
+
+@font-face {
+    font-family: 'epicfont';
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/Airstream-webfont.eot');
+    src: url('fonts/Airstream-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/Airstream-webfont.woff') format('woff'), url('fonts/Airstream-webfont.ttf') format('truetype'), url('fonts/Airstream-webfont.svg#lakeshore') format('svg');
+}
+
+.btn {
+    background-color: rgb(14, 89, 114);
+    color:rgb(0, 0, 0)
+}
+
+body {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 50px;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+  }
+
+h3 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 20px;
+}
+
+p {
+  font-family: airstreamregular;
+  font-size: 50px;
+}
+
+
+
+
+
+
+.thumbnail-image {
+    display: block;
+    width: 300px;
+    height: 200px;
+}
+
+a[href="#"] {
+    text-decoration: none;
+}
+
+.thumbnail-item {
+    border: 1px solid rgb(100%, 100%, 100%);
+    border: 1px solid rgba(100%, 100%, 100%, 0.8);
+    display: inline-block;
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 200px;
+    min-height: 200px;
+
+    transition: transform 133ms ease-in-out;
+}
+
+.thumbnail-item:hover {
+    transform: scale(1.2);
+    transition: transform 1000ms ease-in;
+}
+
+.thumbnail-item + .thumbnail-item {
+    margin-top: 10px;
+}
+
+.thumbnail-list {
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: space-between;
+    list-style: none;
+    order: 2;
+
+    overflow-x: auto;
+    padding: 20px 0;
+    white-space: nowrap;
+}
+
+.detail-image {
+    width: 500px;
+    height: 500px;
+}
+
+.main-content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column
+}
+
+.detail-image-container {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.detail-image-frame {
+    position: relative;
+    text-align: center;
+
+    transition: transform 333ms cubic-bezier(1, 0.06, 0.28, 1);
+}
+
+.detail-image-title {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    position: absolute;
+    top: 350px;
+    left: 0px;
+    text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;
+}
+
+.is-tiny {
+    transform: scale(0.001);
+    transition: transform 0ms;
+}
+
+.thumbnail-item {
+    border: 2px solid rgb(100%, 100%, 100%);
+    border: 2px solid rgba(100%, 100%, 100%, 0.8);
+    display: inline-block;
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 200px;
+    min-height: 200px;
+
+    transition: transform 133ms ease-in-out;
+}
